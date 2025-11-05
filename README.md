@@ -1,12 +1,26 @@
 # main-ashmaize
 
-Simple script for Scavenger mine
+Simple C main loop for Scavenger mine that use a ce-ashmaize fork.
+
+This is FAST and reliable but this is NOT a complete Midnight Scavenger miner:
+
+it's intended to be used in something else that manage the API and get the challenges.
 
 # Get modified ce-ashmaize
 
 Clone `https://github.com/andreabravetti/ce-ashmaize.git` in the parent directory.
 
 Change to ce-ashmaize and run `cargo build --release`
+
+```bash
+git clone https://github.com/andreabravetti/ce-ashmaize.git
+cd ce-ashmaize
+cargo build --release
+cd ..
+git clone https://github.com/andreabravetti/main-ashmaize.git
+cd main-ashmaize
+gcc -L../ce-ashmaize/target/release/ -o ashmaize ashmaize.c -lm -lashmaize
+```
 
 # Compile ashmaize
 
