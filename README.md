@@ -25,7 +25,9 @@ It should work on any platform supported by Rust and GCC, but I have only Linux 
 # Run a challenge
 
 ```bash
-./ashmaize addr1xxxxx **D06C09 00001FFF xxx_no_pre_mine_xxx 2025-11-05T07:59:59.000Z 424085764
+$ result=$(./ashmaize addr1xxxxx **D06C09 00001FFF xxx_no_pre_mine_xxx 2025-11-05T07:59:59.000Z 424085764)
+$ echo $result
+0013bf976db4a8ba
 ```
 
 # If you like it...
