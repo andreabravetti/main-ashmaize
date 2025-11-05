@@ -20,6 +20,8 @@ cd main-ashmaize
 gcc -L../ce-ashmaize/target/release/ -o ashmaize ashmaize.c -lm -lashmaize
 ```
 
+It should work on any platform supported by Rust and GCC, but I have only Linux on x86_64.
+
 # Run a challenge
 
 ```bash
